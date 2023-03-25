@@ -47,13 +47,13 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.my_button_reg).setOnClickListener {
             val signInIntent=googleSighnInClient.signInIntent
-            startActivityForResult(signInIntent,1)
+            startActivityForResult(signInIntent,1)}
 
             findViewById<Button>(R.id.my_button_sign_out).setOnClickListener {
                 auth.signOut()
                 Toast.makeText(this, "sign out", Toast.LENGTH_SHORT).show()
 
-            }
+
         }
     }
 
